@@ -17,8 +17,6 @@ public class BaseClass {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
-
-
    //       EventFiringWebDriver getDriver=new EventFiringWebDriver(driver);
 //       eventListener eL=new eventListener();
 //       getDriver.register(eL);
