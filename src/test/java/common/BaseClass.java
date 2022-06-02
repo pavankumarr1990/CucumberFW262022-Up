@@ -10,22 +10,4 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class BaseClass {
     public static WebDriver driver;
-    @Before
-   public void initializeBrowser()
-   {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
-   //       EventFiringWebDriver getDriver=new EventFiringWebDriver(driver);
-//       eventListener eL=new eventListener();
-//       getDriver.register(eL);
-    }
-
-
-    @After
-    public void tearUp()
-    {
-        driver.quit();
-    }
 }
